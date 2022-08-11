@@ -1,4 +1,6 @@
 #include <iostream>
+#include <math.h>
+//math.h é o repositório matemático para o c++
 
 int main ()
 {
@@ -8,7 +10,8 @@ int main ()
     std::cin >> altura;
     std::cout << "Qual o Peso do Aluno? (Em KG)";
     std::cin >> peso;
-    imc = peso / (altura*altura);
+    imc=peso/(std::pow(altura,2));
+    //std::pow é uma função que eleva uma variável sob determinado expoente
     std::cout << imc << "\n";
     if (imc<18.5)
     {
