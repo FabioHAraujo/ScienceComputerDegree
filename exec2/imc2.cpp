@@ -1,0 +1,38 @@
+#include <iostream>
+
+int main ()
+{
+    float peso, altura, imc;
+    std::cout << "Vamos calcular o IMC de nossos Alunos" "\n";
+    std::cout << "Qual a Altura do Aluno? (em metros) ";
+    std::cin >> altura;
+    std::cout << "Qual o Peso do Aluno? (Em KG)";
+    std::cin >> peso;
+    imc = peso / (altura*altura);
+    std::cout << imc << "\n";
+    if (imc<18.5)
+    {
+        std::cout << "O Aluno esta na faixa baixo peso";
+    }
+    else if (imc<25)
+    {
+        std::cout << "O Aluno esta na faixa normal";
+    }
+    else if (imc<30)
+    {
+        std::cout << "O Aluno esta na faixa sobrepeso";
+    }
+    else if (imc<35)
+    {
+        std::cout << "O Aluno esta na faixa obeso 1";
+    }
+    else if (imc<40)
+    {
+        std::cout << "O Aluno esta na faixa obeso 2";
+    }
+    else if (imc>=40)
+    {
+        std::cout << "O Aluno esta na faixa obeso 3";
+    }
+
+}
