@@ -18,5 +18,5 @@ int main ()
     std::cout << "Desconto do INSS = R$ " << INSS << "\n";
     std::cout << "Desconto do sindicado = R$ " << sindicato << "\n";
     salLiquido = salBruto-IR-INSS-sindicato;
-    std::cout << "E Seu Salario Liquido Equivale a = R$ " << salLiquido;
+    std::cout << "E Seu Salario Liquido Equivale a = R$ " << salLiquido << "\n";
 }

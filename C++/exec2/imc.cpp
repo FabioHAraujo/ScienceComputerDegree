@@ -15,27 +15,26 @@ int main ()
     std::cout << imc << "\n";
     if (imc<18.5)
     {
-        std::cout << "O Aluno esta na faixa baixo peso";
+        std::cout << "O Aluno esta na faixa baixo peso" << "\n";
     }
     else if (imc<25)
     {
-        std::cout << "O Aluno esta na faixa normal";
+        std::cout << "O Aluno esta na faixa normal" << "\n";
     }
     else if (imc<30)
     {
-        std::cout << "O Aluno esta na faixa sobrepeso";
+        std::cout << "O Aluno esta na faixa sobrepeso" << "\n";
     }
     else if (imc<35)
     {
-        std::cout << "O Aluno esta na faixa obeso 1";
+        std::cout << "O Aluno esta na faixa obeso 1" << "\n";
     }
     else if (imc<40)
     {
-        std::cout << "O Aluno esta na faixa obeso 2";
+        std::cout << "O Aluno esta na faixa obeso 2" << "\n";
     }
     else if (imc>=40)
     {
-        std::cout << "O Aluno esta na faixa obeso 3";
+        std::cout << "O Aluno esta na faixa obeso 3" << "\n";
     }
-
 }
