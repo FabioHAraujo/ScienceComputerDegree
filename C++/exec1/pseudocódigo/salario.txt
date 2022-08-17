@@ -1,0 +1,23 @@
+ALGORITMO Salario
+
+VAR
+    horas, ganho, IR, INSS, sindicato, salBruto, salLiquido : real
+
+INICIO
+    ESCREVA "Vamos calcular quanto voce ganha e diminuir as devidas aliquotas"
+    ESCREVA "Quanto Ganha por Hora?"
+    leia ganho
+    ESCREVA "Quantas horas Trabalha?"
+    leia horas
+    salBruto ← horas * ganho
+    IR ← salBruto*0.11
+    INSS ← salBruto*0.08
+    sindicato ← Salbruto*0.05
+    ESCREVE "Você Recebe Como Salário Bruto:", salBruto
+    ESCREVE "Deste valor, são descontados os seguintes valores:"
+    ESCREVE "Imposto de Renda: ", IR
+    ESCREVE "Previdência (INSS): ", INSS
+    ESCREVE "Valor do Sindicato: ", sindicato
+    salLiquido ← salBruto - IR - INSS - sindicato
+    ESCREVE "Seu salário Líquido após descontos é: ", salLiquido
+FIM

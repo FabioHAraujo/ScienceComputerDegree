@@ -1,0 +1,14 @@
+ALGORITMO Media
+
+VAR
+    nota1, nota2, resultado: real
+
+INICIO
+    ESCREVA "Vamos calcular a media das notas de um aluno"
+    ESCREVA "Por favor, insira a Primeira Nota do Aluno: "
+    LEIA nota1
+    ESCREVA "Agora, insira a Segunda Nota do Aluno: "
+    leia nota2
+    resultado ← (nota1+nota2)/2
+    ESCREVA "A Nota Final do Aluno é: ", resultado
+FIM

@@ -1,4 +1,4 @@
-ALGORITIMO Soma
+ALGORITMO Soma
 VAR
     n1, n2, resultado: inteiro
 Inicio

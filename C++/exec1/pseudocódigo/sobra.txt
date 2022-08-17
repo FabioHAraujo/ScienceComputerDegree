@@ -1,17 +1,14 @@
 ALGORITMO SobraDaDivisao
 
 VAR
-    dividendo, divisor, resultado, sobra
+    dividendo, divisor, resultado, resto
 INICIO
     ESCREVA "Vamos Dividir dois Números Inteiros e Aprensetar a sobra dessa divisão"
     ESCREVA "Por favor, digite o Dividendo: "
     LEIA dividendo
     ESCRAVA "Agora, digite o Divisor: "
     LEIA divisor
-    ENQUANTO (dividendo >= divisor)
-    {
-        dividendo ← dividendo - divisor
-        resultado++
-    }
+    resultado ← dividendo div divisor
+    resto ← dividendo mod divisor
     ESCREVA "O Resultado da Divisão Inteira foi: ", resultado, " E Sobrou Desta Divisão: ", dividendo
 FIM

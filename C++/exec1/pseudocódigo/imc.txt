@@ -1,0 +1,13 @@
+ALGORITMO Imc
+
+VAR
+    peso, altura, imc : real
+INICIO
+    ESCREVA "Vamos Calcular o IMC"
+    ESCREVA "Primeiro, insira a Altura: "
+    LEIA altura
+    ESCREVA "Agora, insira o peso: "
+    LEIA peso
+    imc = peso/(altura*altura)
+    ESCRAVA "O IMC é: ", imc
+FIM

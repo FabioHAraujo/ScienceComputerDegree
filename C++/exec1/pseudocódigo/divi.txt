@@ -1,6 +1,7 @@
-ALGORITIMO Soma
+ALGORITMO Divisao
 VAR
-    n1, n2, resultado: inteiro
+    n1, n2
+    resultado: real
 Inicio
     ESCREVA "Vamos Dividir dois Numeros Inteiros: "
     ESCREVA "Informe o Primeiro Numero: "
