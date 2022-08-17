@@ -2,11 +2,11 @@ ALGORITIMO Soma
 VAR
     n1, n2, resultado: inteiro
 Inicio
-    ESCREVA "Vamos Somar dois Numeros Inteiros: "
+    ESCREVA "Vamos Subtrair dois Numeros Inteiros: "
     ESCREVA "Informe o Primeiro Numero: "
     LEIA n1
     ESCREVA "Informe o Segundo Numero: "
     LEIA n2
-    resultado ← n1 + n2
-    ESCREVA "O Resultado da Soma é: ", resultado
+    resultado ← n1 - n2
+    ESCREVA "O Resultado da Subtração é: ", resultado
 FIM
