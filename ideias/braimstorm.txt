@@ -1,0 +1,5 @@
+Análise de Segurança e criminalidade de cada região de uma cidade.
+Trabalho Cooperativo com polícia e demais autoridades para vigilância em áreas de grande criminalidade.
+Acesso restrito à autoridades de alto nível, para evitar o uso discriminado e mau direcionado da ferramente
+Auxílio de dados de Pessoas Físicas e Jurpidicas referente criminalidade.
+Rastreador em Chaveiros para mochilas de crianças.
