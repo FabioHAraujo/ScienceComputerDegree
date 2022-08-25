@@ -7,7 +7,6 @@ int main() {
     cin >> valor;
     contador = valor/100;
     valorSobra = valor % 100;
-//    contador = (valor-valorSobra)/100;
     cout << contador << " Notas de R$100,00" << endl;
     contador = (valorSobra)/50;
     valorSobra = valorSobra % 50;
