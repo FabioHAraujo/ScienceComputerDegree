@@ -14,28 +14,28 @@ int main ()
     cout << "LOCALIZAR ORIGEM DO PRODUTO: \n";
     cout << "INSIRA O CODIGO DO PRODUTO: > ";
     cin >> codigo;
-    cout << "ESTE PRODUTO VEM DA REGIAO " << GREEN;
+    cout << "ESTE PRODUTO VEM DA REGIAO - " << GREEN;
     if (codigo ==1)
     {
         cout << "SUL" << NC;
     }
-    else if (codigo ==1)
+    else if (codigo ==2)
     {
         cout << "NORTE" << NC;
     }
-    else if (codigo ==5 or codigo==6)
+    else if (codigo ==5 && codigo==6)
     {
         cout << "NORDESTE" << NC;
     }
-    else if (codigo ==7 or codigo==8 or codigo==9)
+    else if (codigo ==7 && codigo==8 && codigo==9)
     {
         cout << "SUDESTE" << NC;
     }
-    else if (codigo >=10 and codigo <=20)
+    else if (codigo >=10 || codigo <=20)
     {
         cout << "CENTRO-OESTE" << NC;
     }
-    else if (codigo >=25 and codigo <=50)
+    else if (codigo >=25 || codigo <=50)
     {
         cout << "NORDESTE" << NC;
     }
