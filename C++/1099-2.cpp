@@ -5,7 +5,7 @@ using namespace std;
 
 int main ()
 {
-    int aux=1, vezes=0, X=0, Y=0, maior=0, menor=0, count=0, soma=0;
+    int aux=1, vezes=0, X=0, Y=0, maior=0, menor=0, num1=0, num2=0,num3=0;
     cin >> vezes;
     while (aux<=vezes)
     {
@@ -15,35 +15,35 @@ int main ()
         {
             maior = X;
             menor = Y;
-            count = menor;
             while (menor < (maior-1))
             {
                 menor++;
-                count++;
                 if ((menor%2)==1)
-                {  
-                    soma+=count;
+                {
+                    num1+=menor;
+                    num2+=num1;
+                    num3=num2;
                 }
+
             }
-            cout << soma << endl;
-            soma = 0;
+            cout << num3 << endl;
         }
         else if (Y>X)
         {
             maior = Y;
             menor = X;
-            count = menor;
             while (menor < (maior-1))
             {
                 menor++;
-                count++;
                 if ((menor%2)==1)
-                {  
-                    soma+=count;
+                {
+                    num1+=menor;
+                    num2+=num1;
+                    num3=num2;
                 }
+
             }
-            cout << soma << endl;
-            soma = 0;
+            cout << num3 << endl;
         }
         else
         {
@@ -51,5 +51,7 @@ int main ()
         }
         
         }
+
+    
     return 0;
 }

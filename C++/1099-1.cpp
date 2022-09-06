@@ -24,9 +24,9 @@ int main ()
                 {  
                     soma+=count;
                 }
+
             }
             cout << soma << endl;
-            soma = 0;
         }
         else if (Y>X)
         {
@@ -41,15 +41,13 @@ int main ()
                 {  
                     soma+=count;
                 }
+
             }
             cout << soma << endl;
-            soma = 0;
-        }
-        else
-        {
-            cout << "0" << endl;
         }
         
         }
+
+    
     return 0;
 }
