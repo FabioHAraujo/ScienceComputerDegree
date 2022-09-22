@@ -1,0 +1,13 @@
+2. Considerando que a máquina trabalhe com palavras de 8 bits e usa complemento de 2,
+represente:
+1 - (+77)^10: (01001101)^2
+77/2 = (1) 38 | 38/2 = (0) 19 | 19/2 = (1) 9 | 9/2 = (1) 4 | 4/2 = (0) 2 | 2/2 = (01[este um vem da divisão, pois é usado 2 uma vez para se chegar a 2]) 0 
+2 - (+153)^8: (?)^2
+1 para binário = 001 (3 casas pois é octal) | 5 para binário = 111 | 3 para binário = 011 | TUDO ISSO = 01111011 
+                                                                        (corta os zeros e depois adiciona um só para demonstrar que o sinal é positivo)
+3 - (-18)^10: (10001001)^2
+18/2 = (0) 9 | 9/2 = (1) 4 | 4/2 = (0) 2 | 2/2 = (01) 0 | representado em 8 bits é: 10001001 (o 1 na frente é apenas para representação do sinal)
+4 - (-82)^10: (?)^2
+
+5 - (-62)^16: (?)^2
+6 - (-A16)^16: (?)^2
