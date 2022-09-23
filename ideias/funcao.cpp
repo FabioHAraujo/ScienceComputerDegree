@@ -7,6 +7,10 @@ struct bagagem
     int numBagagem;
     std::string tipoMala;
 };
+// struct é utilizado para determinar variáveis que posteriormente serão atribuídas a outras variáveis, 
+// podendo então ser utilizado .nomeDasVar para chamar essa variável após um array por exemplo.
+// é como criar um tipo de variávle, como int, double ou float, o tipo aqui seria bagagem.
+// neste caso foi criado um struct bagagem
 
 void getBagagemInfo (bagagem array[], int selectBag)
 {
@@ -15,6 +19,7 @@ void getBagagemInfo (bagagem array[], int selectBag)
 
     return;
 }
+// void é utilizado para retornar nada ao fim de uma operação. O Void tem prioridade inforior à uma função int, por isso sempre será executado após a função inteira.
 
 
 int main ()
@@ -23,6 +28,7 @@ int main ()
     std::cout << "Ola senhor, quantas bagagens esta trazendo? ";
     std::cin >> qtdBagagem;
     bagagem arrayBagagem[qtdBagagem];
+    //aqui criamos uma variável arrayBagagem do "tipo bagagem", o qual contém uma var int e uma var string.
     while (count<qtdBagagem)
     {
         std::cout << "O senhor esta inserindo os dados de sua bagagem numero: " << count+1 << std::endl;
