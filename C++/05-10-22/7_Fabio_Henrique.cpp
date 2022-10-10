@@ -34,4 +34,7 @@ int main ()
     cout << fixed << setprecision(2) << "Media de salarios na faixa de 5.000,01 a 10.000,00: " GREEN << mFaixa2/cFaixa2 << NC << endl;
     cout << fixed << setprecision(0) << "Qtde pessoas que recebem mais de 10.000,00: " GREEN << cFaixa3 << NC << endl;
     cout << fixed << setprecision(2) << "Media de salarios maiores de 10.000,00: " GREEN << mFaixa3/cFaixa3 << NC << endl;
+
+    return 0;
+    //na prova eu não botei esse return 0, :(
 }
