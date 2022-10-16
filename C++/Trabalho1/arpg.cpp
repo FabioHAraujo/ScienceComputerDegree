@@ -3,12 +3,8 @@
 #include <ctime>
 #include <iostream>
 #include <iomanip>
-
-#define NC "\e[0m"
-#define GREEN "\e[0;32m"
-#define CYAN "\e[0;36m"
-#define RED "\e[0;31m"
-#define YELLOW "\e[0;33m"
+#include <windows.h>
+//Definições de cores com base na documentação C++ da própria microsoft, todo o conteudo e os defines estão dentro do meu arquivo de cabeçalho.
 
 using namespace std;
 
@@ -24,14 +20,46 @@ struct personagem
 
 int main()
 {
+    // Usarei do Handle da biblioteca windows.h para auxiliar na visualização das etapas do jogo e sentimentos dos personagens.
+    HANDLE  pintarTexto;
+	    int cor=7;
+    pintarTexto = GetStdHandle(STD_OUTPUT_HANDLE);
 
     personagem status;
-    cout << CYAN << "Bem vindo, caro mancebo, ao meu reino! Imagino que goste de jogos, nao?" << RED << " HAHAHAHA! " << CYAN << "NA VERDADE, SUA RESPOSTA EH IRRELEVANTE, DIVIRTA-SE!!!.\n";
-    cout << GREEN << "Por favor, me diga uma coisa, qual seu nome?\n" << NC;
-    cout << "Er... Eu me chamo > ";
+
+    SetConsoleTextAttribute(pintarTexto, cor);
+    int auxiliar;
+    cout << "Bem vindo, caro jogador, a um rapido mundo de fatasia, por ele, encontrara tres bosses, os quais devem ser enfrentados com bravura e valentia, durante o caminho, derrote inimigos e faca seu nome ser ouvido\n";
+    cor = 2;
+    SetConsoleTextAttribute(pintarTexto, cor);
+    cout << "Por favor, me diga uma coisa, qual seu nome?\n";
+    cout << "Eu me chamo > ";
     cin >> status.nome;
-    cout << "SEJA MUITO BEM VINDO " << status.nome;
-    cout << "Agora, antes de mais nada, o que voce eh afinal meu caro? Um Elfo? Druida? Parece ate uma geleia...";
+    cout << "SEJA MUITO BEM VINDO " << status.nome << endl;
+    cout << "Agora, antes de mais nada, o que voce eh afinal? Um Humano, Elfo, Druida ou Anao? Parece ate uma geleia... E ate onde me lembro, ha apenas essas 4 racas no mundo...\n";
+    cin >> status.classe;
+    //infelizmente não consegui realizar switch case com strings, mas ainda vou conseguir, por ora, sorrie e acene com esse if gigante.
+    if (status.classe == "humano" || status.classe == "Humano")
+    {
+        cout << "Humano, ata, agora vejo sua forma com mais clareza..." << endl;
+        auxiliar = 1;
+    }
+    else if (status.classe == "elfo" || status.classe == "Elfo")
+    {
+        cout << "A famosa raca de guerreiros, guardioes das grandes florestas. Consigo identificar sua forma agora" << endl;
+        auxiliar = 2;
+    }
+    else if (status.classe == "druida" || status.classe == "Druida")
+    {
+        cout << "Os famosos monges defensores da vida. Consigo identificar sua forma agora" << endl;
+        auxiliar = 3;
+    }
+    else if (status.classe == "anao" || status.classe == "Anao")
+    {
+        cout << "A famosa raca de ferreiros, que maravilha! Agoarconsigo identificar sua forma" << endl;
+        auxiliar = 4;
+    }
+    else if (status.classe == "secreta" || status.classe == "geleia?" || status.classe == "geleia" || status.classe == "slime?" || status.classe == "slime")
 
     cout << (rand() % 20 + 1) << endl;
 

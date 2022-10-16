@@ -3,20 +3,17 @@
 #include <iostream>
 
 using namespace std;
-
-void roll(int number_of_rolls) {
-    
-    srand(time(NULL));
-    for (int i = 0; i < number_of_rolls; i++) {
-        cout << (rand() % 20 + 1) << endl;
-    }
-}
-
-
 int main() {
-        
-    roll(1);
-    cout << (rand() % 20 + 1) << endl;
+    srand(time(NULL));
+    int resultado=0;
+    int dado=20;
+    int i;
+    for (i=0; i<20; i=i+1)
+    {
+        resultado = rand()% dado +1;
+    }
+    cout << resultado;
+
 
 return 0;
 }
