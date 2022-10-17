@@ -60,8 +60,11 @@ int main()
         auxiliar = 4;
     }
     else if (status.classe == "secreta" || status.classe == "geleia?" || status.classe == "geleia" || status.classe == "slime?" || status.classe == "slime")
+    {
+        cout << "Geleia... Sim... Um slime, realmente nem lembrava da sua raca, mas pelo que sei sao os mais temidos seres vivos da face da terra, embora sejam... Fofos.";
+    }
 
-    cout << (rand() % 20 + 1) << endl;
+    
 
 return 0;
 }
