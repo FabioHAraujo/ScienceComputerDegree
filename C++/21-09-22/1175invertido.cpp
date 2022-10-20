@@ -1,34 +1,34 @@
 #include <iomanip>
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
-int main ()
+void print(int arr[], int n)
 {
-    int pos=0, count1=0, tam=20, count2=19, auxArray=0, aux=0;
-    int N[tam];
-    int pos2 = tam -1;
-    while (count1<20)
-    {
-        cin >> N[pos];
-        pos++;
-        count1++;
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
     }
-    tam
-    while (count2>0)
+}
+ 
+// Utility function to reverse elements of an array
+void reverse(int arr[], int n) {
+    reverse(arr, arr + n);
+}
+ 
+int main()
+{
+    int pos;
+    int arr[pos];
+    for (pos=0; pos<20; pos++)
     {
-        auxArray = N[tam-1-pos];
-        N[tam-1-pos] = N[pos];
-        N[pos] = auxArray;
-        count2--;
-    }
-    while (aux<20)
-    {
-        cout << "N["<< aux << "] = " << N[aux] << endl;
-        aux++;
+        cin >> arr[pos];
     }
     
+    int n = sizeof(arr)/sizeof(arr[0]);
+ 
+    reverse(arr, n);
+    print(arr, n);
+ 
     return 0;
 }
-
-
