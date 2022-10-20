@@ -12,10 +12,10 @@ struct bagagem
 // é como criar um tipo de variávle, como int, double ou float, o tipo aqui seria bagagem.
 // neste caso foi criado um struct bagagem
 
-void getBagagemInfo (bagagem array[], int selectBag)
+void getBagagemInfo (bagagem issoehumarray[], int selectBag)
 {
-    std::cout << "Numeracao da Bagagem: " << array[selectBag].numBagagem << std::endl;
-    std::cout << "Tipo da mala: " << array[selectBag].tipoMala << std::endl;
+    std::cout << "Numeracao da Bagagem: " << issoehumarray[selectBag].numBagagem << std::endl;
+    std::cout << "Tipo da mala: " << issoehumarray[selectBag].tipoMala << std::endl;
 
     return;
 }

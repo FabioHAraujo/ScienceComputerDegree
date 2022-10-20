@@ -22,7 +22,7 @@ int main()
 {
     // Usarei do Handle da biblioteca windows.h para auxiliar na visualização das etapas do jogo e sentimentos dos personagens.
     HANDLE  pintarTexto;
-	    int cor=7;
+	    int cor=0;
     pintarTexto = GetStdHandle(STD_OUTPUT_HANDLE);
 
     personagem status;
@@ -64,7 +64,6 @@ int main()
         cout << "Geleia... Sim... Um slime, realmente nem lembrava da sua raca, mas pelo que sei sao os mais temidos seres vivos da face da terra, embora sejam... Fofos.";
     }
 
-    
 
-return 0;
+    return 0;
 }
