@@ -1,34 +1,32 @@
-#include <iomanip>
 #include <iostream>
 
-using namespace std;
+int main() {
 
-int main ()
-{
-    int pos=0, count1=0, tam=20, count2=19, auxArray=0, aux=0;
-    int N[tam];
-    int pos2 = tam -1;
-    while (count1<20)
-    {
-        cin >> N[pos];
-        pos++;
-        count1++;
+    int sizeArray = 5;
+    int array[sizeArray];
+    int m = sizeArray - 1;
+
+    for (int n = 0; n < sizeArray; n++) {
+        std::cin >> array[n];
     }
-    tam
-    while (count2>0)
-    {
-        auxArray = N[tam-1-pos];
-        N[tam-1-pos] = N[pos];
-        N[pos] = auxArray;
-        count2--;
+
+    for (int n = 0; n < sizeArray; n++) {
+        std::cout << array[n] << " ";
     }
-    while (aux<20)
-    {
-        cout << "N["<< aux << "] = " << N[aux] << endl;
-        aux++;
+    std::cout << std::endl;
+
+
+    for (int n = 0; n < sizeArray/2; n++) {
+        int temp = array[n];
+        array[n] = array[m];
+        array[m] = temp;
+        m--;
     }
-    
-    return 0;
+
+    for (int n = 0; n < sizeArray; n++) {
+        std::cout << array[n] << " ";
+    }
+    std::cout << std::endl;
+
+
 }
-
-
