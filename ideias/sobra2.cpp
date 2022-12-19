@@ -1,14 +1,9 @@
 #include <iostream>
+using namespace std;
 
 int main ()
 {
-    int div, expo;
-    std::cin >> div;
-    std::cin >> expo;
-    while (div >= expo)
-    {
-        div = div - expo;
-    }
-    std::cout << div;
+    for (int i=0;i<10;i++)
+    cout << "hello" << endl;
     return 0;
 }
