@@ -17,7 +17,7 @@ bool ordena(player ordem, player ordem2){
 }
 
 int main(){
-    vector<player> recruta;
+    vector<player> recruta; //Mesma coisa que colocar player recruta[tamanho]
     player davi, rafael, felipe, fabio;
     davi.vida = 100;
     rafael.vida = 60;
@@ -27,9 +27,6 @@ int main(){
     recruta.push_back(fabio);
     recruta.push_back(rafael);
     recruta.push_back(felipe);
-    /*for (int i=0;i<recruta.size();i++){
-        cout << "Eu adoro a Forca Area e votei no bolsonaro, meu nome eh player!" << endl;
-    }*/
     for (player &pessoa : recruta){
         cout << pessoa.vida << endl;
     }

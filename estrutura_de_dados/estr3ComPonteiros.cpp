@@ -1,7 +1,6 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
-#define Red             0xF800
 
 using namespace std;
 
@@ -10,11 +9,25 @@ struct Aluno{
     float nota1, nota2, media;
 };
 
+float insercao(Aluno alunos[], int qtdAlunos);
+
+void getMedias (Aluno alunos[], int qtdAlunos);
+
+int main(){
+    int qtdAlunos;
+    cout << "Por favor, quantos alunos deseja inserir?" << endl;
+    cin >> qtdAlunos;
+    Aluno aln[qtdAlunos];
+    insercao(aln, qtdAlunos);
+    getMedias(aln, qtdAlunos);
+
+    return 0;
+}
+
 float insercao(Aluno alunos[], int qtdAlunos){
     for (int i=0;i<qtdAlunos;i++){
         cout << "Ola, seja bem vindo, vamos calcular sua media. Primeiramente, qual seu nome?\n";
-        cin.ignore();
-        getline(cin, alunos[i].nome);
+        cin.ignore(); getline(cin, alunos[i].nome);
         cout << "Certo, vou te chamar de " << alunos[i].nome << ". Agora digite suas 2 notas\n";
         cin >> alunos[i].nota1 >> alunos[i].nota2;
         alunos[i].media = (alunos[i].nota1+alunos[i].nota2)/2;
@@ -28,15 +41,4 @@ void getMedias (Aluno alunos[], int qtdAlunos)
     }
 
     return;
-}
-
-int main(){
-    int qtdAlunos;
-    cout << "Por favor, quantos alunos deseja inserir?" << endl;
-    cin >> qtdAlunos;
-    Aluno aln[qtdAlunos];
-    insercao(aln, qtdAlunos);
-    getMedias(aln, qtdAlunos);
-
-    return 0;
 }
