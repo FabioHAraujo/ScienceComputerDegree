@@ -10,6 +10,12 @@ struct Aluno{
     float nota1, nota2, media;
 };
 
+
+void escrita (){
+    cout << "piriri";
+
+}
+
 int main(){
     int qtdAlunos;
     cout << "Por favor, quantos alunos deseja inserir?" << endl;
