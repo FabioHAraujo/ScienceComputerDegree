@@ -23,7 +23,7 @@ int main(){
     rafael.vida = 60;
     fabio.vida = 180;
     felipe.vida = 120;
-    recruta.push_back(davi);
+    recruta.push_back(davi); // Mesma coisa que recruta[ultimaPosiArray]=Davi
     recruta.push_back(fabio);
     recruta.push_back(rafael);
     recruta.push_back(felipe);
