@@ -1,6 +1,41 @@
 {
     "configurations": [
         {
+            "type": "java",
+            "name": "ContSimpls",
+            "request": "launch",
+            "mainClass": "ContSimpls",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Contador",
+            "request": "launch",
+            "mainClass": "Contador",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Mouse",
+            "request": "launch",
+            "mainClass": "Mouse",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "AppTeste",
+            "request": "launch",
+            "mainClass": "AppTeste",
+            "projectName": "ProgI_Roteiro2"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "ProgI_Roteiro1"
+        },
+        {
             "name": "C/C++: g++.exe Compilar e depurar o arquivo ativo",
             "type": "cppdbg",
             "request": "launch",
