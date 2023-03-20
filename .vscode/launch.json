@@ -2,6 +2,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Termometro",
+            "request": "launch",
+            "mainClass": "Termometro",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Aleatorio",
+            "request": "launch",
+            "mainClass": "Aleatorio",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Botoes",
+            "request": "launch",
+            "mainClass": "Botoes",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "ButtonViewer",
+            "request": "launch",
+            "mainClass": "ButtonViewer",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "ButtonsLeftAndRight",
+            "request": "launch",
+            "mainClass": "ButtonsLeftAndRight",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "ContSimpls",
             "request": "launch",
             "mainClass": "ContSimpls",

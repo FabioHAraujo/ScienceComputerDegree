@@ -1,0 +1,11 @@
+0 0 0 r 0
+0 1 1 r 0
+0 _ _ l 1
+1 0 0 l X
+1 1 1 l X
+X 1 X r halt
+X 0 X r halt
+
+SUBSTITUI O PENULTIMO POR X
+
+input - 111101101010

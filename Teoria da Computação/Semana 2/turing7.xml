@@ -1,0 +1,11 @@
+0 0 0 r 0
+0 1 1 r 1
+1 0 0 r 0
+1 1 1 r 2
+2 1 1 r 2
+2 0 0 r 2
+0 _ N r halt
+1 _ N r halt
+2 _ S r halt
+
+verifica se há duplicadas de 1;

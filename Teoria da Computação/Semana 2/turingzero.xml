@@ -1,0 +1,8 @@
+0 _ V r V
+V _ A r A
+A _ Z r Z
+Z _ I r I
+I _ O r O
+O _ _ r halt
+
+SE ESTIVER TUDO VAZIO, ESCREVE VAZIO

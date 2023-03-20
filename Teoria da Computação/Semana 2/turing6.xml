@@ -1,0 +1,11 @@
+0 1 1 r 1
+1 1 1 r 2
+2 1 1 r 0
+1 _ N r halt
+2 _ N r halt
+0 _ S r halt
+
+Verifica se é multiplo de 3
+
+input - cadeia de 1
+não calcula com base no numero, mas sim na quantidade de digitos do input.

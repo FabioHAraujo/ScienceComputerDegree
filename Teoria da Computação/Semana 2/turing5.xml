@@ -1,0 +1,8 @@
+1 1 1 r 0
+0 1 1 r 1
+1 _ I r halt
+0 _ P r halt
+
+IDENTIFICA SE É IMPAR OU PAR E ESCREVE I OU P NO FINAL
+
+input - 111 ou 1111 ou qualquer numero de "1"
