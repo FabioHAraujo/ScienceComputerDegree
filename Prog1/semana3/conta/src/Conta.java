@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Conta {
     Scanner quest = new Scanner(System.in);
     public int numero;
