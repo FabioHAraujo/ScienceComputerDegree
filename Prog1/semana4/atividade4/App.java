@@ -8,7 +8,7 @@ public class App {
 		String endereco;
 		double salario;
 		//leitura
-        JOptionPane.showMessageDialog(null, "Olá, vamos e registrar na tabela de atletas");
+        JOptionPane.showMessageDialog(null, "Olá, vamos te registrar na tabela de atletas");
         String tempNum = JOptionPane.showInputDialog(null, "Informe a sua idade:");
         idade = Integer.parseInt(tempNum);
 		
