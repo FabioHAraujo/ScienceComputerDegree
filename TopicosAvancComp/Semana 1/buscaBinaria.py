@@ -1,5 +1,5 @@
-x = 5454545544
-epsilon = 0.00000000001
+x = 999999999
+epsilon = 0.000001
 palpites = 0
 limiteinferior = 0.0
 limitesuperior = x
