@@ -1,0 +1,8 @@
+0 S S r S
+S _ I r I
+I _ M r M
+M _ _ r halt
+0 N N r N
+N _ Ã r Ã
+Ã _ O r O
+O _ _ r halt
