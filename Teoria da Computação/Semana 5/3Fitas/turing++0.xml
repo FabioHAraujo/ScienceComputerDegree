@@ -1,0 +1,23 @@
+//LOAD AN EXAMPLE TO TRY
+//then load an input and click play
+
+//Syntax:
+
+//-------CONFIGURATION
+name: [name_of_machine]
+init: [initial_state]
+accept: [accept_state_1],... ,[accept_state_n]
+
+//-------DELTA FUNCTION:
+[current_state],[read_symbol]
+[new_state],[write_symbol],[>|<|-]
+
+// < = left
+// > = right
+// - = hold
+// use underscore for blank cells
+
+//States and symbols are case-sensitive
+
+//Load your code and click COMPILE.
+//or load an example (top-right).

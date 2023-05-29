@@ -1,0 +1,13 @@
+name: poe F no final
+
+init: q0
+accept: qHalt
+
+q0,0,_,_
+q0,0,0,0,>,>,<
+
+q0,1,_,_
+q0,1,1,1,>,>,<
+
+q0,_,_,_
+qHalt,_,F,F,-,-,-

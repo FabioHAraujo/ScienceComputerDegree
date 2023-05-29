@@ -1,0 +1,15 @@
+1:  IF A = 0 GOTO 2:
+    A = A-1
+    GOTO 1:
+2:  IF C = 0 GOTO 3:
+    C = C-1
+    GOTO 2:
+3:  IF B = 0 GOTO 4:
+    B = B-1
+    A = A+1
+    C = C+1
+    GOTO 3:
+4:  SE C = 0 GOTO 5:
+    B = B+1
+    C = C-1
+    GOTO 4

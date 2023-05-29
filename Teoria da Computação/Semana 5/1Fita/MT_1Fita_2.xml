@@ -1,0 +1,13 @@
+name: substitui 0 por 2 e 1 por 3
+
+init: q0
+accept: qHalt
+
+q0,0
+q0,2,>
+
+q0,1
+q0,3,>
+
+q0,_
+qHalt,_,-

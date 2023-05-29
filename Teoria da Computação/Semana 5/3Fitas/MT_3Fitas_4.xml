@@ -1,0 +1,28 @@
+name: escreve 0 ou 1 somente quando o anterior for igual a ele
+
+init: q0
+accept: qHalt
+
+q0,0,_,_
+q1,0,_,_,>,-,-
+
+q1,0,_,_
+q1,0,0,_,>,>,-
+
+q1,1,_,_
+q2,1,_,_,>,-,-
+
+q2,0,_,_
+q1,0,_,_,>,-,-
+
+q2,1,_,_
+q2,1,_,1,>,-,>
+
+q0,_,_,_
+qHalt,_,_,_,-,-,-
+
+q1,_,_,_
+qHalt,_,_,_,-,-,-
+
+q2,_,_,_
+qHalt,_,_,_,-,-,-

@@ -1,0 +1,9 @@
+// Confere se x é par ou y
+
+ifz x (fim,2)
+dec x
+inc y
+ifz x(fim,5)
+dec x
+dec y(1)
+fim:

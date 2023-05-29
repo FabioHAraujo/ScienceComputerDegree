@@ -1,0 +1,14 @@
+0 0 0 r 0
+0 1 1 r 1
+1 0 0 r 2
+1 1 1 r 1
+2 1 1 r 3
+2 0 0 r 0
+3 _ S r halt
+1 _ N r halt
+0 _ N r halt
+2 _ N r halt
+
+MARCA NO FINAL SE TIVER 101
+
+100100101

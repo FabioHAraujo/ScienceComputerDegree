@@ -1,0 +1,3 @@
+Escalonador em C
+
+Implementar um Programa que varre em profundidade os arquivos de um segmento de árvore de diretório, listando os nomes dos arquivos e subdiretórios encontrados.

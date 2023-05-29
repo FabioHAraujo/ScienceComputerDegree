@@ -1,0 +1,11 @@
+0 1 1 r 0
+0 0 0 r 0
+0 _ _ l F
+F 0 F r I
+F 1 F r I
+I _ I r M
+M _ M r halt
+
+TROCA O ULTIMO POR FIM
+
+1001000

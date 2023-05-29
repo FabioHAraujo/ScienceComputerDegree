@@ -1,0 +1,20 @@
+1:  IF A = 0 GOTO 2:
+    A = A-1
+    C = C+1
+    GOTO 1:
+2:  IF C = 0 GOTO 3:
+    C = C-1
+    GOTO 2:
+3:  IF B = 0 GOTO 4:
+    B = B-1
+    A = A+1
+    D = D+1
+    GOTO 3:
+5:  SE C = 0 GOTO 6:
+    A = A+1
+    C = C-1
+    GOTO 5:
+6:  SE D = 0 GOTO 7:
+    B = B+1
+    D = D-1
+    GOTO 6:

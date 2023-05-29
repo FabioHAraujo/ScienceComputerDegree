@@ -1,0 +1,5 @@
+ifz x (fim,2)
+dec x
+inc y
+ifz x (fim,2)
+fim:

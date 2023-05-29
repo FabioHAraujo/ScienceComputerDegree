@@ -1,0 +1,12 @@
+0 _ _ r B
+B _ B r O
+O _ O r A
+A _ A r _
+_ _ _ r 2
+2 _ N r N
+N _ O r 1
+1 _ I r I
+I _ T r T
+T _ E r halt
+
+Escreve boa noite num espaço branco
