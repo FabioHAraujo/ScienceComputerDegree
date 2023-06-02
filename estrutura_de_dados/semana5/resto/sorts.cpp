@@ -5,10 +5,11 @@
 using namespace std;
 
 
-int volta(int A[], int n){
+int volta(int A[], int n, int B[]){
     for (int i=0; i<n; i++){ 
         A[i]=B[i];
     }
+    cout << "O ARRAY FOI RETORNADO AO PADRAO: ";
 }
 
 /* 
@@ -106,11 +107,11 @@ int main(void) {
     imprime(A,n);
     bubble(A,n);
     imprime(A,n);
-    volta(A,n);
+    volta(A,n,B);
     imprime(A,n);
     selection(A,n);
     imprime(A,n);
-    volta(A,n);
+    volta(A,n,B);
     imprime(A,n);
     insertion(A,n);
     imprime(A,n);
