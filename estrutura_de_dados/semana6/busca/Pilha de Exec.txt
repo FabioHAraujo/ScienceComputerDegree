@@ -1,0 +1,140 @@
+Chamada Inicial
+mergeSort([6, 5, 4, 3, 2, 1], 0, 6)
+
+Chamada Inicial Na Pilha de Execução.
+Pilha:
+mergeSort([6, 5, 4, 3, 2, 1], 0, 6)
+
+Chama Recursivo: mergeSort([6, 5, 4, 3, 2, 1], 0, 3)
+Pilha:
+mergeSort([6, 5, 4, 3, 2, 1], 0, 6)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 3)
+
+Chama Recursivo novamente: mergeSort([6, 5, 4, 3, 2, 1], 0, 1)
+Pilha:
+mergeSort([6, 5, 4, 3, 2, 1], 0, 6)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 3)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 1)
+
+Chama Recursivo mais uma vez: mergeSort([6, 5, 4, 3, 2, 1], 2, 3)
+Pilha: 
+mergeSort([6, 5, 4, 3, 2, 1], 0, 6)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 3)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 1)
+mergeSort([6, 5, 4, 3, 2, 1], 2, 3)
+
+Chama Recursivo mais uma: mergeSort([6, 5, 4, 3, 2, 1], 4, 6)
+Pilha:
+mergeSort([6, 5, 4, 3, 2, 1], 0, 6)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 3)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 1)
+mergeSort([6, 5, 4, 3, 2, 1], 2, 3)
+mergeSort([6, 5, 4, 3, 2, 1], 4, 6)
+
+Após dividir, chama Merge: merge([6], [5])
+Pilha:
+mergeSort([6, 5, 4, 3, 2, 1], 0, 6)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 3)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 1)
+mergeSort([6, 5, 4, 3, 2, 1], 2, 3)
+mergeSort([6, 5, 4, 3, 2, 1], 4, 6)
+merge([6], [5])
+
+Retorna o Merge.
+Pilha:
+mergeSort([6, 5, 4, 3, 2, 1], 0, 6)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 3)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 1)
+mergeSort([6, 5, 4, 3, 2, 1], 2, 3)
+mergeSort([6, 5, 4, 3, 2, 1], 4, 6)
+
+Chama o Merge: merge([4], [3])
+Pilha:
+mergeSort([6, 5, 4, 3, 2, 1], 0, 6)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 3)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 1)
+mergeSort([6, 5, 4, 3, 2, 1], 2, 3)
+mergeSort([6, 5, 4, 3, 2, 1], 4, 6)
+merge([4], [3])
+
+Retorna o Merge.
+Pilha:
+mergeSort([6, 5, 4, 3, 2, 1], 0, 6)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 3)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 1)
+mergeSort([6, 5, 4, 3, 2, 1], 2, 3)
+mergeSort([6, 5, 4, 3, 2, 1], 4, 6)
+
+Chama o Merge, agora com os 2 pares ordenados:
+Pilha:
+mergeSort([6, 5, 4, 3, 2, 1], 0, 6)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 3)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 1)
+mergeSort([6, 5, 4, 3, 2, 1], 2, 3)
+mergeSort([6, 5, 4, 3, 2, 1], 4, 6)
+merge([5, 6], [3, 4])
+
+Retorna o Merge.
+Pilha:
+mergeSort([6, 5, 4, 3, 2, 1], 0, 6)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 3)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 1)
+mergeSort([6, 5, 4, 3, 2, 1], 2, 3)
+mergeSort([6, 5, 4, 3, 2, 1], 4, 6)
+
+Retorna o Merge para a pilha:
+mergeSort([6, 5, 4, 3, 2, 1], 0, 6)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 3)
+[5, 6]
+mergeSort([6, 5, 4, 3, 2, 1], 2, 3)
+mergeSort([6, 5, 4, 3, 2, 1], 4, 6)
+
+Retorna o outro Merge para a pilha:
+mergeSort([6, 5, 4, 3, 2, 1], 0, 6)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 3)
+[5, 6]
+[3, 4]
+mergeSort([6, 5, 4, 3, 2, 1], 4, 6)
+
+Chama Merge:
+mergeSort([6, 5, 4, 3, 2, 1], 0, 6)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 3)
+[5, 6]
+[3, 4]
+mergeSort([6, 5, 4, 3, 2, 1], 4, 6)
+merge([5, 6], [3, 4])
+
+Retorna Merge e chama novamente.
+Pilha:
+mergeSort([6, 5, 4, 3, 2, 1], 0, 6)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 3)
+[5, 6]
+[3, 4]
+mergeSort([6, 5, 4, 3, 2, 1], 4, 6)
+merge([3, 4, 5, 6], [1, 2])
+
+Retorna o Merge.
+Pilha:
+mergeSort([6, 5, 4, 3, 2, 1], 0, 6)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 3)
+[5, 6]
+[3, 4]
+mergeSort([6, 5, 4, 3, 2, 1], 4, 6)
+
+Retorna o  mergeSort([6, 5, 4, 3, 2, 1], 4, 6):
+Pilha:
+mergeSort([6, 5, 4, 3, 2, 1], 0, 6)
+mergeSort([6, 5, 4, 3, 2, 1], 0, 3)
+[5, 6]
+[3, 4]
+[1, 2, 3, 4, 5, 6]
+
+Retoran mergeSort([6, 5, 4, 3, 2, 1], 0, 3):
+Pilha:
+mergeSort([6, 5, 4, 3, 2, 1], 0, 6)
+[3, 4, 5, 6]
+[1, 2, 3, 4, 5, 6]
+
+Retorna mergeSort([6, 5, 4, 3, 2, 1], 0, 6):
+[1, 2, 3, 4, 5, 6]
+

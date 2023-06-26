@@ -62,6 +62,11 @@ public class TelaCadastroClienteScroll extends javax.swing.JFrame {
         }
 
         jcSexo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Selecione", "Masculino", "Feminino" }));
+        jcSexo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jcSexoActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Nome");
 
@@ -214,6 +219,10 @@ public class TelaCadastroClienteScroll extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "Nome:"+tfNome.getText()+" Sexo:"+jcSexo.getSelectedItem().toString());
 
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jcSexoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcSexoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jcSexoActionPerformed
 
     /**
      * @param args the command line arguments

@@ -1,0 +1,184 @@
+====================================================================================================
+Trabalho Final de Sistemas Operacionais
+Aluno: Fabio Henrique Araujo
+Professor: Dr. Paulo Ricardo Muniz Barros
+Disciplina: Sistemas Operacionais
+Curso: Ciencia da Computacao
+Universidade: Universidade Feevale
+Ano: 2023
+====================================================================================================
+
+====================================================================================================
+Seja bem vindo ao simulador de escalonamento de processos!
+Este programa ira simular o escalonamento de processos de acordo com o arquivo de entrada
+O arquivo de entrada deve estar no formato:
+Numero de Processos
+PID Tempo_de_Chegada Burst Prioridade
+Exemplo:
+3
+1 0 10 1
+2 1 5 2
+3 2 3 3
+====================================================================================================
+
+Com base nesse arquivo, o escalonador ira executar os processos abaixo.
+Este eh o arquivo inicial:
+10
+1 0 8 3
+2 1 6 2
+3 2 4 1
+4 3 2 2
+5 4 10 3
+6 5 12 1
+7 6 5 2
+8 7 7 3
+9 8 3 1
+10 9 9 2
+Lista de Processos Montada:
+PID: 1, Tempo de Chegada: 0, BURST: 8, Prioridade: 3
+PID: 2, Tempo de Chegada: 1, BURST: 6, Prioridade: 2
+PID: 3, Tempo de Chegada: 2, BURST: 4, Prioridade: 1
+PID: 4, Tempo de Chegada: 3, BURST: 2, Prioridade: 2
+PID: 5, Tempo de Chegada: 4, BURST: 10, Prioridade: 3
+PID: 6, Tempo de Chegada: 5, BURST: 12, Prioridade: 1
+PID: 7, Tempo de Chegada: 6, BURST: 5, Prioridade: 2
+PID: 8, Tempo de Chegada: 7, BURST: 7, Prioridade: 3
+PID: 9, Tempo de Chegada: 8, BURST: 3, Prioridade: 1
+PID: 10, Tempo de Chegada: 9, BURST: 9, Prioridade: 2
+
+Executando Processo 1, tempo restante: 8
+Executando Processo 2, tempo restante: 6
+Preemptando Processo 1 (Tempo Restante: 7) com Processo 2 (Tempo Restante: 5)
+Executando Processo 3, tempo restante: 4
+Preemptando Processo 2 (Tempo Restante: 5) com Processo 3 (Tempo Restante: 3)
+Executando Processo 3, tempo restante: 3
+Preemptando Processo 2 (Tempo Restante: 5) com Processo 3 (Tempo Restante: 2)
+Executando Processo 3, tempo restante: 2
+Preemptando Processo 2 (Tempo Restante: 5) com Processo 3 (Tempo Restante: 1)
+Executando Processo 3, tempo restante: 1
+Processo 3 concluido
+Tempo de espera: 0
+Executando Processo 6, tempo restante: 12
+Preemptando Processo 2 (Tempo Restante: 5) com Processo 6 (Tempo Restante: 11)
+Executando Processo 6, tempo restante: 11
+Preemptando Processo 2 (Tempo Restante: 5) com Processo 6 (Tempo Restante: 10)
+Executando Processo 6, tempo restante: 10
+Preemptando Processo 9 (Tempo Restante: 3) com Processo 6 (Tempo Restante: 9)
+Executando Processo 6, tempo restante: 9
+Preemptando Processo 9 (Tempo Restante: 3) com Processo 6 (Tempo Restante: 8)
+Executando Processo 6, tempo restante: 8
+Preemptando Processo 9 (Tempo Restante: 3) com Processo 6 (Tempo Restante: 7)
+Executando Processo 6, tempo restante: 7
+Preemptando Processo 9 (Tempo Restante: 3) com Processo 6 (Tempo Restante: 6)
+Executando Processo 6, tempo restante: 6
+Preemptando Processo 9 (Tempo Restante: 3) com Processo 6 (Tempo Restante: 5)
+Executando Processo 6, tempo restante: 5
+Preemptando Processo 9 (Tempo Restante: 3) com Processo 6 (Tempo Restante: 4)
+Executando Processo 6, tempo restante: 4
+Preemptando Processo 9 (Tempo Restante: 3) com Processo 6 (Tempo Restante: 3)
+Executando Processo 6, tempo restante: 3
+Preemptando Processo 9 (Tempo Restante: 3) com Processo 6 (Tempo Restante: 2)
+Executando Processo 6, tempo restante: 2
+Preemptando Processo 9 (Tempo Restante: 3) com Processo 6 (Tempo Restante: 1)
+Executando Processo 6, tempo restante: 1
+Processo 6 concluido
+Tempo de espera: 0
+Executando Processo 9, tempo restante: 3
+Preemptando Processo 2 (Tempo Restante: 5) com Processo 9 (Tempo Restante: 2)
+Executando Processo 9, tempo restante: 2
+Preemptando Processo 2 (Tempo Restante: 5) com Processo 9 (Tempo Restante: 1)
+Executando Processo 9, tempo restante: 1
+Processo 9 concluido
+Tempo de espera: 9
+Executando Processo 2, tempo restante: 5
+Preemptando Processo 4 (Tempo Restante: 2) com Processo 2 (Tempo Restante: 4)
+Executando Processo 2, tempo restante: 4
+Preemptando Processo 4 (Tempo Restante: 2) com Processo 2 (Tempo Restante: 3)
+Executando Processo 2, tempo restante: 3
+Preemptando Processo 4 (Tempo Restante: 2) com Processo 2 (Tempo Restante: 2)
+Executando Processo 2, tempo restante: 2
+Preemptando Processo 4 (Tempo Restante: 2) com Processo 2 (Tempo Restante: 1)
+Executando Processo 2, tempo restante: 1
+Processo 2 concluido
+Tempo de espera: 16
+Executando Processo 4, tempo restante: 2
+Preemptando Processo 7 (Tempo Restante: 5) com Processo 4 (Tempo Restante: 1)
+Executando Processo 4, tempo restante: 1
+Processo 4 concluido
+Tempo de espera: 19
+Executando Processo 7, tempo restante: 5
+Preemptando Processo 10 (Tempo Restante: 9) com Processo 7 (Tempo Restante: 4)
+Executando Processo 7, tempo restante: 4
+Preemptando Processo 10 (Tempo Restante: 9) com Processo 7 (Tempo Restante: 3)
+Executando Processo 7, tempo restante: 3
+Preemptando Processo 10 (Tempo Restante: 9) com Processo 7 (Tempo Restante: 2)
+Executando Processo 7, tempo restante: 2
+Preemptando Processo 10 (Tempo Restante: 9) com Processo 7 (Tempo Restante: 1)
+Executando Processo 7, tempo restante: 1
+Processo 7 concluido
+Tempo de espera: 18
+Executando Processo 10, tempo restante: 9
+Preemptando Processo 1 (Tempo Restante: 7) com Processo 10 (Tempo Restante: 8)
+Executando Processo 10, tempo restante: 8
+Preemptando Processo 1 (Tempo Restante: 7) com Processo 10 (Tempo Restante: 7)
+Executando Processo 10, tempo restante: 7
+Preemptando Processo 1 (Tempo Restante: 7) com Processo 10 (Tempo Restante: 6)
+Executando Processo 10, tempo restante: 6
+Preemptando Processo 1 (Tempo Restante: 7) com Processo 10 (Tempo Restante: 5)
+Executando Processo 10, tempo restante: 5
+Preemptando Processo 1 (Tempo Restante: 7) com Processo 10 (Tempo Restante: 4)
+Executando Processo 10, tempo restante: 4
+Preemptando Processo 1 (Tempo Restante: 7) com Processo 10 (Tempo Restante: 3)
+Executando Processo 10, tempo restante: 3
+Preemptando Processo 1 (Tempo Restante: 7) com Processo 10 (Tempo Restante: 2)
+Executando Processo 10, tempo restante: 2
+Preemptando Processo 1 (Tempo Restante: 7) com Processo 10 (Tempo Restante: 1)
+Executando Processo 10, tempo restante: 1
+Processo 10 concluido
+Tempo de espera: 19
+Executando Processo 1, tempo restante: 7
+Preemptando Processo 5 (Tempo Restante: 10) com Processo 1 (Tempo Restante: 6)
+Executando Processo 1, tempo restante: 6
+Preemptando Processo 5 (Tempo Restante: 10) com Processo 1 (Tempo Restante: 5)
+Executando Processo 1, tempo restante: 5
+Preemptando Processo 5 (Tempo Restante: 10) com Processo 1 (Tempo Restante: 4)
+Executando Processo 1, tempo restante: 4
+Preemptando Processo 5 (Tempo Restante: 10) com Processo 1 (Tempo Restante: 3)
+Executando Processo 1, tempo restante: 3
+Preemptando Processo 5 (Tempo Restante: 10) com Processo 1 (Tempo Restante: 2)
+Executando Processo 1, tempo restante: 2
+Preemptando Processo 5 (Tempo Restante: 10) com Processo 1 (Tempo Restante: 1)
+Executando Processo 1, tempo restante: 1
+Processo 1 concluido
+Tempo de espera: 34
+Executando Processo 5, tempo restante: 10
+Preemptando Processo 8 (Tempo Restante: 7) com Processo 5 (Tempo Restante: 9)
+Executando Processo 5, tempo restante: 9
+Preemptando Processo 8 (Tempo Restante: 7) com Processo 5 (Tempo Restante: 8)
+Executando Processo 5, tempo restante: 8
+Preemptando Processo 8 (Tempo Restante: 7) com Processo 5 (Tempo Restante: 7)
+Executando Processo 5, tempo restante: 7
+Preemptando Processo 8 (Tempo Restante: 7) com Processo 5 (Tempo Restante: 6)
+Executando Processo 5, tempo restante: 6
+Preemptando Processo 8 (Tempo Restante: 7) com Processo 5 (Tempo Restante: 5)
+Executando Processo 5, tempo restante: 5
+Preemptando Processo 8 (Tempo Restante: 7) com Processo 5 (Tempo Restante: 4)
+Executando Processo 5, tempo restante: 4
+Preemptando Processo 8 (Tempo Restante: 7) com Processo 5 (Tempo Restante: 3)
+Executando Processo 5, tempo restante: 3
+Preemptando Processo 8 (Tempo Restante: 7) com Processo 5 (Tempo Restante: 2)
+Executando Processo 5, tempo restante: 2
+Preemptando Processo 8 (Tempo Restante: 7) com Processo 5 (Tempo Restante: 1)
+Executando Processo 5, tempo restante: 1
+Processo 5 concluido
+Tempo de espera: 37
+Executando Processo 8, tempo restante: 7
+Executando Processo 8, tempo restante: 6
+Executando Processo 8, tempo restante: 5
+Executando Processo 8, tempo restante: 4
+Executando Processo 8, tempo restante: 3
+Executando Processo 8, tempo restante: 2
+Executando Processo 8, tempo restante: 1
+Processo 8 concluido
+Tempo de espera: 44
+Tempo Medio de Espera (TME): 19.60
