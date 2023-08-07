@@ -5,11 +5,6 @@ using namespace std;
 
 int fatorial(int n);
 
-int fatorial(int n){
-    if (n == 1) return 1;
-    else return n * fatorial(n - 1);
-}
-
 int main(void){
     int n, fat;
     cout << "Bem vindo ao programa de Fatorial" << endl;
@@ -17,4 +12,9 @@ int main(void){
     cin >> n;
     fat = fatorial(n);
     cout << "O fatorial de " << n << " eh " << fat << endl;
+}
+
+int fatorial(int n){
+    if (n == 1) return 1;
+    else return n * fatorial(n - 1);
 }
