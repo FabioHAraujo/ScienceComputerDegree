@@ -1,5 +1,5 @@
 ent = open("7x7n.pdb", "r")
-sai = open("7x7nnn.pdb", "w")
+sai = open("7x7nnnn.pdb", "w")
 
 for i in ent:
     if i[0:4] == "ATOM":

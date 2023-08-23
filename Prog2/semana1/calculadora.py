@@ -1,5 +1,5 @@
 a = input("Por favor, digite um numero: ")
-if a
+
 b = input("Por favor, digite outro numero: ")
 
 print("Por favor, escolha a operação que deseja fazer: ")

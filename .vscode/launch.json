@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RadixSort10",
+            "request": "launch",
+            "mainClass": "RadixSort10",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "ShellSort",
+            "request": "launch",
+            "mainClass": "ShellSort",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",
