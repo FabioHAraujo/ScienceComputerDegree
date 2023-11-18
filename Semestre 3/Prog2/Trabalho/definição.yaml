@@ -1,0 +1,4 @@
+Este trabalho tem como objetivo o desenvolvimento da saída de um campo minado a partir de uma entrada.
+
+A entrada é de dois numeros entre n>0 e n<=100, representando altura e largura do campo.
+Seguido do campo escrito com '.' e '*', onde '.' simboliza lugar livre e '*' simboliza bomba.

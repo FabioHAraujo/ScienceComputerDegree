@@ -1,0 +1,2 @@
+Olá professor, fiz em C e C++, para o caso do compilador não ser compatível com C++.
+Para alguns compiladores Windows, o de C++ não funciona, porcausa de problema da versal do MinGW, mas como fiz no linux não consegui testar isso direito, então, para todos os efeitos, considere a versão feita em C :) 

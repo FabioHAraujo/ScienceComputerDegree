@@ -1,0 +1,11 @@
+A TARTARUGA TATATA
+
+A - 7
+_ - 2
+T - 5
+R - 2
+U - 1
+G - 1
+
+
+
